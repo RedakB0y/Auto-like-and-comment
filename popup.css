@@ -1,0 +1,12 @@
+body {
+    width: 217px;
+    height: auto;
+}
+
+#btn {
+    margin-top: 11px;
+    visibility: hidden;
+}
+input{
+    margin-bottom: 11px;
+}

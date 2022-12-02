@@ -1,0 +1,26 @@
+{
+    "manifest_version": 3,
+    "name": "LinkedIn Like and Comment  Extension",
+    "description": "Like and Comment",
+    "version": "2.0",
+    "action": {
+        "default_icon": "logo.png",
+        "default_popup": "popup.html"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "*://*.linkedin.com/in/*"
+            ],
+            "js": [
+                "extension.js"
+            ]
+        }
+    ],
+    "permissions": [
+        "tabs"
+    ],
+    "background": {
+        "service_worker": "background.js"
+    }
+}
